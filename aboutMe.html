@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="myHeader">
+        <nav class="nav-ccontainer">
+            <a href="index.html"><img src="/images/Logo 2.svg" alt="My Logo (back to home)"></a>
+            <div class="nav-link">
+                <p><a href="/images/Nia Holmes - Resume 2025 copy.pdf">Resume</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="image">
+                    <img src="/images/Headshot + Text.png" alt="My profile photo">
+                </div>
+                <div class="text">
+                    <p>I'm currently a junior at the University of Michigan in the School of Information studying UX design. But how did I decide on UX design?</p>
+                </div>
+            </div>
+
+            <div class="one" class="mySlides">
+                <div class="image">
+                    <img src="/images/TV.png" alt="Image depicting how I watched a lot of TV over the pandemic">
+                </div>
+                <div class="text">
+                    <p>As a movie and TV enthusiast, I had nearly run out of things to watch during the pandemic and was searching for something new to occupy my time. </p>
+                </div>
+            </div>
+
+            <div class="two" class="mySlides">
+                <div class="image">
+                    <img src="/images/Edits.png" alt="Image depicting how I discovered edits on Instagram.">
+                </div>
+                <div class="text">
+                    <p>I stumbled across a fan edit on Instagram. It featured one of my favorite characters and was filled with creative effects and transitions. Instantly hooked, I dove into YouTube tutorials, created my own fan page, and started experimenting with Video Star, a mobile editing app. That was the moment I realized how much I loved blending creativity and technology to express my interest in entertainment, and connect with others.</p>
+                </div>
+            </div>
+            
+            <div class="one"  class="mySlides">
+                <div class="image">
+                    <img src="/images/major.png" alt="Image depicting the major I thought I was decided on.">
+                </div>
+                <div class="text">
+                    <p>When I started college, I (for some odd reason) didn't even consider design or video editing. I instead leaned toward psychology. My first psychology class was really interesting. I enjoyed learning about human behavior and the way the brain works, but ultimately I needed something more hands-on. Choosing to step away from psychology, however, was scary since I've always liked having a clear plan.</p>
+                </div>
+            </div>
+
+            <div class="two" class="mySlides">
+                <div class="image">
+                    <img id="SI106" src="/images/SI106.png" alt="Image depicting that I enrolled in SI 106.">
+                </div>
+                <div class="text">
+                    <p>My dad encouraged me to try programming, so I enrolled in SI 101. In that very first lecture, my professor said something that stuck with me: “Engineers assume users are logical, but in the School of Information, we understand that human behavior is complex, and we design for that complexity.” This idea lit a spark and guided me to UX design.</p>
+                </div>
+            </div>
+
+            <div class="one" class="mySlides">
+                <div class="image">
+                    <img src="/images/python.png" alt="Python code pun displaying how I solve problems.">
+                </div>
+                <div class="text">
+                    <p>Of course, learning to code has not been easy for me. I've encountered my share of frustrating errors, but problem-solving has always been part of who I am. Throughout my life—whether it was troubleshooting unexpected challenges during a work shift, or helping friends and family navigate tricky situations—I found genuine satisfaction in finding quick, effective solutions.</p>
+                </div>
+            </div>
+            
+            <div class="two" class="mySlides">
+                <div class="image">
+                    <img src="/images/ux+nia.png" alt="Image depicting how I and UX have the same values.">
+                </div>
+                <div class="text">
+                    <p>I do appreciate that UX design isn't focused on programming. It's a field that values creativity, empathy, and an understanding of human behavior—my true strengths. I know that my growing coding skills will only enhance my ability to collaborate with developers and bring thoughtful, user-centered solutions to life.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+    Copyright &copy; <span id="copyright-year"></span>| Nia Holmes.
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentYearSpan = document.getElementById('copyright-year');
+        if (currentYearSpan) {
+            currentYearSpan.innerText = new Date().getFullYear();
+        }
+    });
+</script>
+</body>
+</html>

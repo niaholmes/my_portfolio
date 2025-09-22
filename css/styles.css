@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(232, 230, 230); 
+}
+
+
+#myHeader{
+  position: sticky;
+  top: 0;
+  background-color: rgb(232, 230, 230);
+  width: 100%;
+  max-width: 100%;
+}
+
+.nav-ccontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.nav-ccontainer img{
+    width: 110px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link p {
+    margin: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 2px black;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* Home Page  */
+
+.intro {
+    text-align: center;
+    margin: 80px 40px;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container button {
+    background-color: pink;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 27px;
+    border-radius: 30px;
+    margin: 15px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 3px black;
+}
+
+
+.aboutMe a {
+    text-decoration: none;
+    color: black;
+}
+
+.myProjs a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactMe a {
+    text-decoration: none;
+    color: black;
+}
+
+/* About Me Page */
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 25px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 307px;
+}
+
+.text {
+    display: flex;
+    background-color: pink;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 2px black;
+}
+
+/* My Projects */
+
+.proj-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+}
+
+.container-bkg {
+    background-color: white;
+}
+
+.proj-bkg {
+    background-color: pink;
+}
+
+.proj-image1 img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.proj-description {
+    padding: 45px;
+    margin: 15px;
+}
+
+/* .reddit-hide2 {
+    display: none;
+} */
+
+.proj-image2 img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.interact a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.interact p {
+    background-color: pink;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 3px black;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 55px;
+}
+
+/* Contact Me */
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 8px;
+    margin: 50px;
+    border-radius: 20px;
+    border: solid 2px black;
+}
+
+form label {
+    padding: 20px;
+}
+
+form input {
+    padding: 10px;
+}
+
+form textarea {
+    padding: 30px;
+    margin: 4px;
+}
+
+form button {
+    background-color: pink;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 40px;
+    border: solid 2px black;
+    box-shadow: 3px 3px 3px black;
+}
+
+.or {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.my-contact img {
+    width: 45px;
+}
+
+.my-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 30px;
+}
+
+
+
+
+/* Desktop View */
+
+@media screen and (min-width: 720px) {
+    .container button{
+        font-size: 30px;
+        padding: 80px;
+    }
+
+    .image img {
+        width: 407px;
+    }
+
+    #SI106 {
+        width: 607px;
+    }
+
+    .mySlides {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+    }
+
+    .slideshow-container {
+        padding: 50px;
+    }
+
+    .text {
+        font-size: 23px;
+        padding: 40px;
+    }
+
+    .proj-image1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .proj-image1 img {
+        display: flex;
+        justify-content: center;
+        width: 950px;
+    }
+
+    .proj-image2 img {
+        display: flex;
+        justify-content: center;
+        width: 950px;
+    }
+
+    .interact {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .interact p {
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+/* @media screen and (min-width: 530px) {
+    .proj-image1 img {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 50px;
+    }
+        .proj-image2 img {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 50px;
+    }
+} */
